@@ -105,12 +105,4 @@ const stylized = {
   },
 };
 
-function combineLogMsgs(logArray) {
-  return logArray.reduce((accmLogObj, currLogObj) => {
-    if (currLogObj.color) accmLogObj.color += ` ${currLogObj.color}`;
-    if (currLogObj.plain) accmLogObj.plain += ` ${currLogObj.plain}`;
-    return accmLogObj;
-  }, { color: '', plain: '' });
-}
-
 module.exports = stylized;
