@@ -1,0 +1,19 @@
+{
+  "name": "express-reporter",
+  "version": "0.0.0-alpha",
+  "description": "Activity logger for ExpressJS",
+  "main": "expressReporter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soleiluwedu/express-reporter.git"
+  },
+  "author": "Thai-Duong Nguyen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/soleiluwedu/express-reporter/issues"
+  },
+  "homepage": "https://github.com/soleiluwedu/express-reporter#readme"
+}
