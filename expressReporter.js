@@ -65,12 +65,8 @@ function response(req, res, next) {
   // If no error, assume successful delivery of payload and log confirmation.
   // Check for custom msg in res.locals.successMsg first.
   else {
-    const plain = res.locals.successMsg
-      ? res.locals.successMsg
-      : `[${req.method} ${req.url}] payload delivered`;
-    const color = res.locals.successMsg
-      ? res.locals.successMsg
-      : `${stylized.brackets(`${stylized.reqMETHOD(req.method)} ${stylized.url(req.url)}`)} payload delivered`;
+    const plain = `[${req.method} ${req.url}] ${res.locals.successMsg || 'payload delivered'}`;
+    const color = `${stylized.brackets(`${stylized.reqMETHOD(req.method)} ${stylized.url(req.url)}`)} ${res.locals.successMsg || 'payload delivered'}`;
     logMessage({ plain, color });
   }
 
